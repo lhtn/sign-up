@@ -5,6 +5,40 @@
     font-style: normal;
 }
 
+.container {
+    display: flex;
+}
+
+.side-banner {
+    position: relative;
+}
+
+.odin-banner {
+    position: absolute;
+    width: 25em;
+    top: 7em;
+    display: flex;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
-    font: 1em "form"
+    color: #ffffff;
+    font: 4em "form";
+}
+
+h2 {
+    color: #ffffff;
+    font: 1.5em "form";
+    display: flex;
+    align-self: flex-end;
+}
+
+.odin-logo {
+    height: 7em;
+}
+
+.ice-cream {
+    width: 25em;
 }
