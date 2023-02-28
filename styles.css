@@ -1,44 +1,105 @@
+.container {
+    display: flex;
+}
+
 @font-face {
-    font-family: "form";
+    font-family: "logo";
     src: url("fonts/norse-bold-webfont.woff2") format("woff2"), url("fonts/norse-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
-.container {
+@font-face {
+    font-family: "description";
+    src: url("fonts/margita-regular-webfont.woff2") format("woff2"), url("fonts/margita-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "form";
+    src: url("fonts/kiona-regular-webfont.woff2") format("woff2"), url("fonts/kiona-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: #ffffff;
+    font: 4em "logo";
     display: flex;
 }
 
+h2 {
+    color: #ffffff;
+    font: 1.5em "logo";
+}
+
+p {
+    font: 1em "description";
+}
+
+/* SIDE BANNER */
+
 .side-banner {
     position: relative;
+}
+
+.ice-cream {
+    width: 25em;
 }
 
 .odin-banner {
     position: absolute;
     width: 25em;
     top: 7em;
-    display: flex;
     background-color: rgba(0,0,0,0.7);
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-h1 {
-    color: #ffffff;
-    font: 4em "form";
-}
-
-h2 {
-    color: #ffffff;
-    font: 1.5em "form";
-    display: flex;
-    align-self: flex-end;
 }
 
 .odin-logo {
     height: 7em;
 }
 
-.ice-cream {
-    width: 25em;
+.credits {
+    position: absolute;
+    bottom: 0em;
+    font-size: 0.6em;
+    color: #ffffff;
+    left: 12.5em;
+}
+
+/* FORM */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.description,
+.account {
+    background-color: rgba(0,0,0,0.05);
+}
+
+form {
+    font: 0.8em "form";
+    display: flex;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone-number,
+.password,
+.confirm {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font: 0.8em "description";
+    color: #ffffff;
+    background-color: #8B0000;
+    padding: 1em 4em;
 }
