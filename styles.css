@@ -51,7 +51,7 @@ p {
 .odin-banner {
     position: absolute;
     width: 25em;
-    top: 7em;
+    top: 3em;
     background-color: rgba(0,0,0,0.7);
     display: flex;
     justify-content: center;
@@ -77,14 +77,14 @@ p {
     flex-direction: column;
 }
 
-.description,
-.account {
-    background-color: rgba(0,0,0,0.05);
+.description {
+    background-color: rgba(0,0,0,0.04);
+    padding: 6em 2em 2em 2em;
 }
 
 form {
     font: 0.8em "form";
-    display: flex;
+    padding: 2em;
 }
 
 .first-name,
@@ -97,9 +97,25 @@ form {
     flex-direction: column;
 }
 
+.first-row,
+.second-row,
+.third-row {
+    font-weight: bold;
+    display: flex;
+    gap: 4em;
+    margin-bottom: 1em;
+}
+
+.account {
+    background-color: rgba(0,0,0,0.04);
+    padding: 2em 5em 8.8em 2em;
+}
+
 button {
-    font: 0.8em "description";
+    font: 0.8em "form";
+    font-weight: bold;
     color: #ffffff;
-    background-color: #8B0000;
+    background-color: #A0491E; /* B18775 */
     padding: 1em 4em;
+    margin-bottom: 1em;
 }
