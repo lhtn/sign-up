@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    justify-content: center;
 }
 
 @font-face {
@@ -106,6 +107,20 @@ form {
     margin-bottom: 1em;
 }
 
+input {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0.2em;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid #0000CD;
+}
+
+input[type="password"] {
+    border-color: #D22B2B;
+}
+
 .account {
     background-color: rgba(0,0,0,0.04);
     padding: 2em 5em 8.8em 2em;
@@ -115,7 +130,7 @@ button {
     font: 0.8em "form";
     font-weight: bold;
     color: #ffffff;
-    background-color: #A0491E; /* B18775 */
+    background-color: #873600;
     padding: 1em 4em;
     margin-bottom: 1em;
 }

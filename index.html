@@ -32,38 +32,38 @@
                     <div class="first-row">
                         <div class="first-name">
                             <label for="first-name">First Name</label>
-                            <input id="first-name" name="first-name" type="text">
+                            <input required pattern="[a-zA-Z]" id="first-name" name="first-name" type="text">
                         </div>
                         <div class="last-name">
                             <label for="last-name">Last Name</label>
-                            <input id="last-name" name="last-name" type="text">
+                            <input required pattern="[a-zA-Z]" id="last-name" name="last-name" type="text">
                         </div>
                     </div>
                     <div class="second-row">
                         <div class="email">
                             <label for="email">Email</label>
-                            <input id="email" name="email" type="email">
+                            <input required id="email" name="email" type="email">
                         </div>
                         <div class="phone-number">
                             <label for="phone-number">Phone Number</label>
-                            <input id="phone-number" name="phone-number" type="tel">
+                            <input required id="phone-number" name="phone-number" type="tel">
                         </div>
                     </div>
                     <div class="third-row">
                         <div class="password">
                             <label for="password">Password</label>
-                            <input id="password" name="password" type="password">
+                            <input required minlength="8" id="password" name="password" type="password" aria-describedby="password-minlength">
                         </div>
                         <div class="confirm">
                             <label for="confirm">Confirm Password</label>
-                            <input id="confirm" name="confirm" type="password">
+                            <input required minlength=8" id="confirm" name="confirm" type="password" aria-describedby="password-minlength">
                         </div>
                     </div>
                 </form>
     
                 <div class="account">
                     <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="log-in.html" style="color:#A0491E">Log in</a></p>
+                    <p>Already have an account? <a href="log-in.html" style="color:#873600">Log in</a></p>
                 </div>
             </div>
 
