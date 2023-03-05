@@ -56,31 +56,28 @@ table {
 /* MY PROJECT */
 
 .container {
-    max-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 @font-face {
     font-family: "logo";
-    src: url("fonts/norse-bold-webfont.woff2") format("woff2"), 
-    url("fonts/norse-bold-webfont.woff") format("woff");
+    src: url("fonts/norse-bold-webfont.woff2") format("woff2"), url("fonts/norse-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "description";
-    src: url("fonts/margita-regular-webfont.woff2") format("woff2"), 
-    url("fonts/margita-regular-webfont.woff") format("woff");
+    src: url("fonts/margita-regular-webfont.woff2") format("woff2"), url("fonts/margita-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "form";
-    src: url("fonts/kiona-regular-webfont.woff2") format("woff2"), 
-    url("fonts/kiona-regular-webfont.woff") format("woff");
+    src: url("fonts/kiona-regular-webfont.woff2") format("woff2"), url("fonts/kiona-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -96,8 +93,8 @@ h2 {
     font: 3vh "logo";
 }
 
-p {
-    font: 1em "description";
+h3 {
+    font: 1.5rem "description";
 }
 
 /* SIDE BANNER */
@@ -107,12 +104,14 @@ p {
 }
 
 .ice-cream {
-    max-height: 100vh;
+    height: 100vh;
+    width: auto;
 }
 
 .odin-banner {
     position: absolute;
-    width: 100%;
+    height: 20vh;
+    width: 56vh;
     top: 10%;
     background-color: rgba(0,0,0,0.7);
     display: flex;
@@ -125,11 +124,11 @@ p {
 }
 
 .credits {
-    position: relative;
-    font-size: 1vh;
-    display: flex;
-    justify-content: center;
-    bottom: 3%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 1%;
+    font: 1vh "description";
     color: #ffffff;
 }
 
@@ -144,13 +143,13 @@ p {
 .description {
     background-color: rgba(0,0,0,0.04);
     flex-grow: 1;
-    /* padding: 6em 2em 2em 2em; */
+    padding: 6em 2em 0em 2em;
 }
 
 form {
-    font: 0.8em "form";
+    font: 0.8rem "form";
     flex-grow: 1;
-    /* padding: 2em; */
+    padding: 2em 2em;
 }
 
 .first-name,
@@ -161,6 +160,7 @@ form {
 .confirm {
     display: flex;
     flex-direction: column;
+    padding: 1em;
 }
 
 .first-row,
@@ -168,8 +168,6 @@ form {
 .third-row {
     font-weight: bold;
     display: flex;
-    /* gap: 4em;
-    margin-bottom: 1em; */
 }
 
 input {
@@ -180,6 +178,7 @@ input {
 
 input:focus {
     border: 1px solid #0000CD;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 input[type="password"] {
@@ -188,15 +187,19 @@ input[type="password"] {
 
 .account {
     background-color: rgba(0,0,0,0.04);
-    flex-grow: 1;
-    /* padding: 2em 5em 10em 2em; */
+    flex-grow: 4;
+    padding: 2em;
 }
 
 button {
-    font: 0.8em "form";
+    font: 0.8rem "form";
     font-weight: bold;
     color: #ffffff;
     background-color: #873600;
     padding: 1em 4em;
-    /* margin-bottom: 1em; */
+    margin-bottom: 2em;
+}
+
+.existing-account {
+    font: 1rem "description";
 }
