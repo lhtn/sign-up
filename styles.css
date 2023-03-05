@@ -56,40 +56,44 @@ table {
 /* MY PROJECT */
 
 .container {
+    max-height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 @font-face {
     font-family: "logo";
-    src: url("fonts/norse-bold-webfont.woff2") format("woff2"), url("fonts/norse-bold-webfont.woff") format("woff");
+    src: url("fonts/norse-bold-webfont.woff2") format("woff2"), 
+    url("fonts/norse-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "description";
-    src: url("fonts/margita-regular-webfont.woff2") format("woff2"), url("fonts/margita-regular-webfont.woff") format("woff");
+    src: url("fonts/margita-regular-webfont.woff2") format("woff2"), 
+    url("fonts/margita-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "form";
-    src: url("fonts/kiona-regular-webfont.woff2") format("woff2"), url("fonts/kiona-regular-webfont.woff") format("woff");
+    src: url("fonts/kiona-regular-webfont.woff2") format("woff2"), 
+    url("fonts/kiona-regular-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 h1 {
     color: #ffffff;
-    font: 4em "logo";
+    font: 9vh "logo";
     display: flex;
 }
 
 h2 {
     color: #ffffff;
-    font: 1.5em "logo";
+    font: 3vh "logo";
 }
 
 p {
@@ -104,7 +108,6 @@ p {
 
 .ice-cream {
     max-height: 100vh;
-    margin: auto;
 }
 
 .odin-banner {
@@ -118,15 +121,15 @@ p {
 }
 
 .odin-logo {
-    height: 10em;
+    height: 20vh;
 }
 
 .credits {
     position: relative;
-    font-size: 0.7em;
+    font-size: 1vh;
     display: flex;
     justify-content: center;
-    bottom: 2em;
+    bottom: 3%;
     color: #ffffff;
 }
 
@@ -140,11 +143,13 @@ p {
 
 .description {
     background-color: rgba(0,0,0,0.04);
+    flex-grow: 1;
     /* padding: 6em 2em 2em 2em; */
 }
 
 form {
     font: 0.8em "form";
+    flex-grow: 1;
     /* padding: 2em; */
 }
 
@@ -183,6 +188,7 @@ input[type="password"] {
 
 .account {
     background-color: rgba(0,0,0,0.04);
+    flex-grow: 1;
     /* padding: 2em 5em 10em 2em; */
 }
 
