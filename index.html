@@ -34,35 +34,35 @@
                     <br>Sign up <em>now</em> to receive our weekly offers!</h3>
                 </div>
     
-                <form>
+                <form action="nextpage.com/path" method="post">
                     <div class="first-row">
                         <div class="first-name">
                             <label for="first-name">First Name</label>
-                            <input required pattern="[a-zA-Z]" id="first-name" name="first-name" type="text">
+                            <input type="text" required id="first-name" name="first-name" pattern="[A-Za-z]{2,20}">
                         </div>
                         <div class="last-name">
                             <label for="last-name">Last Name</label>
-                            <input required pattern="[a-zA-Z]" id="last-name" name="last-name" type="text">
+                            <input type="text" required id="last-name" name="last-name" pattern="[A-Za-z]{2,20}">
                         </div>
                     </div>
                     <div class="second-row">
                         <div class="email">
                             <label for="email">Email</label>
-                            <input required id="email" name="email" type="email">
+                            <input type="email" required id="email" name="email">
                         </div>
                         <div class="phone-number">
                             <label for="phone-number">Phone Number</label>
-                            <input required id="phone-number" name="phone-number" type="tel">
+                            <input type="tel" required id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </div>
                     </div>
                     <div class="third-row">
                         <div class="password">
                             <label for="password">Password</label>
-                            <input required minlength="8" id="password" name="password" type="password" aria-describedby="password-minlength">
+                            <input type="password" required minlength="8" maxlength="12" id="password" name="password" aria-describedby="password-minlength">
                         </div>
                         <div class="confirm">
                             <label for="confirm">Confirm Password</label>
-                            <input required minlength="8" id="confirm" name="confirm" type="password" aria-describedby="password-minlength">
+                            <input type="password" required minlength="8" maxlength="12" id="confirm" name="confirm" aria-describedby="password-minlength">
                         </div>
                     </div>
                 </form>

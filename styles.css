@@ -176,9 +176,13 @@ input {
     outline: none;
 }
 
-input:focus {
+input:focus:valid {
     border: 1px solid #0000CD;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+input:focus:invalid {
+    border-color: #D22B2B;
 }
 
 input[type="password"] {
