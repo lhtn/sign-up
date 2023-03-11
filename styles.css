@@ -211,5 +211,6 @@ button {
 }
 
 .existing-account {
-    font: 1rem "description";
+    font: 0.8rem "form";
+    font-weight: bold;
 }
