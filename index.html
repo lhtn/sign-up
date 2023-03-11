@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -26,50 +27,50 @@
             <div class="form-container">
                 <div class="description">
                     <h3>We are a small Toronto business specializing in
-                    <br>small-batch ice cream
+                    <br>small-batch ice cream sourced with local ingredients
                     <br>
-                    <br>We focus on quality ingredients sourced 
-                    <br> from local businesses
-                    <br>
-                    <br>Sign up <em>now</em> to receive our weekly offers!</h3>
+                    <br>Sign up now to receive our weekly offers and
+                    <br>collect points with each purchase!</h3>
                 </div>
     
-                <form action="nextpage.com/path" method="post">
+                <form action="index.html" method="post">
                     <div class="first-row">
                         <div class="first-name">
                             <label for="first-name">First Name</label>
-                            <input type="text" required id="first-name" name="first-name" pattern="[A-Za-z]{2,20}">
+                            <input type="text" id="first-name" name="first-name" pattern="[A-Za-z]{2,20}" required>
                         </div>
                         <div class="last-name">
                             <label for="last-name">Last Name</label>
-                            <input type="text" required id="last-name" name="last-name" pattern="[A-Za-z]{2,20}">
+                            <input type="text" id="last-name" name="last-name" pattern="[A-Za-z]{2,20}" required>
                         </div>
                     </div>
                     <div class="second-row">
                         <div class="email">
                             <label for="email">Email</label>
-                            <input type="email" required id="email" name="email">
+                            <input type="email" id="email" name="email" title="email@example.com" required>
                         </div>
                         <div class="phone-number">
                             <label for="phone-number">Phone Number</label>
-                            <input type="tel" required id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required>
                         </div>
                     </div>
                     <div class="third-row">
                         <div class="password">
                             <label for="password">Password</label>
-                            <input type="password" required minlength="8" maxlength="12" id="password" name="password" aria-describedby="password-minlength">
+                            <input type="password" minlength="8" maxlength="12" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Passwords must include at least 1 uppercase character, 1 lowercase character and 1 number" aria-describedby="password-minlength" required>
                         </div>
                         <div class="confirm">
                             <label for="confirm">Confirm Password</label>
-                            <input type="password" required minlength="8" maxlength="12" id="confirm" name="confirm" aria-describedby="password-minlength">
+                            <input type="password" minlength="8" maxlength="12" id="confirm" name="confirm" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Passwords must include at least 1 uppercase character, 1 lowercase character and 1 number" aria-describedby="password-minlength" required>
                         </div>
+                    </div>
+                    <div class="create">
+                        <button type="submit">Create Account</button>
                     </div>
                 </form>
     
                 <div class="account">
-                    <button type="submit">Create Account</button>
-                    <p class="existing-account">Already have an account? <a href="log-in.html" style="color:#873600">Log in</a></p>
+                    <p class="existing-account">Already have an account? <a href="index.html" style="color:#873600">Log in</a></p>
                 </div>
             </div>
 

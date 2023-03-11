@@ -94,7 +94,7 @@ h2 {
 }
 
 h3 {
-    font: 1.5rem "description";
+    font: 1.2rem "description";
 }
 
 /* SIDE BANNER */
@@ -176,6 +176,11 @@ input {
     outline: none;
 }
 
+input:focus {
+    border: 1px solid #0000CD;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
 input:focus:valid {
     border: 1px solid #0000CD;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
@@ -185,14 +190,9 @@ input:focus:invalid {
     border-color: #D22B2B;
 }
 
-input[type="password"] {
-    border-color: #D22B2B;
-}
-
-.account {
-    background-color: rgba(0,0,0,0.04);
-    flex-grow: 4;
-    padding: 2em;
+.create {
+    margin-top: 2em;
+    margin-left: 1em;
 }
 
 button {
@@ -201,7 +201,13 @@ button {
     color: #ffffff;
     background-color: #873600;
     padding: 1em 4em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
+}
+
+.account {
+    background-color: rgba(0,0,0,0.04);
+    flex-grow: 4;
+    padding: 2em;
 }
 
 .existing-account {
